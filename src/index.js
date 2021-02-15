@@ -7,6 +7,7 @@ Image
 import Styles from './Styles'
 import Avatar from './components/avatar/layouts/Avatar'
 import Parcours from './components/parcours/layouts/parcours'
+import Menu from './components/menu/layouts/Menu'
 class Accueil extends React.Component {
   state = {
   }
@@ -19,7 +20,7 @@ class Accueil extends React.Component {
     return (
     <View>
              <Avatar/>
-<Parcours/>
+             <Menu/>
     </View> 
     );
   }

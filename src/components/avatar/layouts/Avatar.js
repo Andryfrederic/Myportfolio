@@ -35,27 +35,7 @@ class Avatar extends React.Component {
                                 </Text>
                                 </View>
                         </View>
-                        <View style={[Styles.row,{justifyContent:'space-around'}]}>
-                                <TouchableOpacity
-                                onPress={}>
-                                    <View style={Style.button}>
-                                            <Text style={Style.title}>
-                                                Mobile
-                                            </Text>
-                                    </View>
-                                </TouchableOpacity>
-                                <View style={Style.button}>
-                                        <Text style={Style.title}>
-                                            web
-                                        </Text>
-                                </View>
-                                <View style={Style.button}>
-                                        <Text style={Style.title}>
-                                            Parcours
-                                        </Text>
-                                </View>
-                                
-                        </View>
+                        
     </View> 
     );
   }
