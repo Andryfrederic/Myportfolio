@@ -19,7 +19,7 @@ class Menu extends React.Component {
     return (
 <View style={[Styles.row,{justifyContent:'space-around'}]}>
         <TouchableOpacity
-        onPress={()=>alert('ok')}>
+        onPress={this.props.toMobile}>
             <View style={Style.button}>
                 <Text style={Style.title}>
                     Mobile
@@ -27,7 +27,7 @@ class Menu extends React.Component {
             </View>
         </TouchableOpacity>
         <TouchableOpacity
-        onPress={()=>alert('ok')}>
+        onPress={this.props.toWeb}>
             <View style={Style.button}>
                 <Text style={Style.title}>
                     Web
@@ -35,7 +35,7 @@ class Menu extends React.Component {
             </View>
         </TouchableOpacity>
         <TouchableOpacity
-        onPress={()=>alert('ok')}>
+        onPress={this.props.toParcours}>
             <View style={Style.button}>
                 <Text style={Style.title}>
                     Parcours
