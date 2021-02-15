@@ -59,6 +59,7 @@ arrow:{
     paddingLeft:10,
     paddingRight:10,
     paddingBottom:4,
+    textAlign:'center'
 },
 contactbutton:{
     width:wp*40,
