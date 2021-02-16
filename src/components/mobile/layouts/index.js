@@ -6,7 +6,8 @@ Text,
 import Avatar from '../../avatar/layouts/Avatar'
 import Menu from '../../menu/layouts/Menu'
 import Footer from '../../footer/layouts/Footer'
-class Mobile extends React.Component {
+import Details from './details'
+class Mobile extends Component {
     static navigationOptions =
     {
      headerShown: false
@@ -32,21 +33,23 @@ class Mobile extends React.Component {
       toParcours(){
         alert('props parcours')
       }
+      home(){
+          this.props.navigation.navigate('Accueil')
+      }
     render() {
       return (
       <View style={{
           flex:1
       }}>
-          
+
           <Avatar/>
           <Menu
             toMobile={()=>this.toMobile()}
             toWeb={()=>this.toWeb()}
             toParcours={()=>this.toParcours()}/>
-                <Text>
-                    Mobile
-                </Text>
-          <Footer/>
+           <Details/>
+          <Footer
+          home={()=>this.home()}/>
       </View> 
       );
     }

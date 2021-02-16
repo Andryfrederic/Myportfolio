@@ -9,12 +9,13 @@ const Style = StyleSheet.create({
     container:{
         position:'absolute',
         bottom:hp*1,
-        width:wp*90,
+        width:wp*70,
         height:hp*8,
         backgroundColor:'#900C3F',
         alignItems:'center',
         justifyContent:'center',
-        alignSelf:'center'
+        alignSelf:'center',
+        flexDirection:'row'
     }
  
   });

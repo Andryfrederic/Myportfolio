@@ -8,10 +8,10 @@ TouchableOpacity
 import Styles from './Styles'
 import Presentation from './components/presentation/layouts/Presentation'
 import Footer from './components/footer/layouts/Footer'
-import Avatar from './components/presentation/layouts/Avatar'
+import Avatar from './components/avatar/layouts/Avatar'
 import Parcours from './components/parcours/layouts/parcours'
 import Menu from './components/menu/layouts/Menu'
-class Accueil extends React.Component {
+class Accueil extends Component {
   static navigationOptions =
   {
    headerShown: false
