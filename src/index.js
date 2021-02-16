@@ -12,13 +12,23 @@ import Avatar from './components/presentation/layouts/Avatar'
 import Parcours from './components/parcours/layouts/parcours'
 import Menu from './components/menu/layouts/Menu'
 class Accueil extends React.Component {
-  state = {
-  }
+  static navigationOptions =
+  {
+   headerShown: false
+  };
+
+   constructor(props) {
+       super(props);
+   
+       this.state = {
+       
+                      }
+     }
 
   componentDidMount() {
   }
   toMobile(){
-    alert('props mobile')
+    this.props.navigation.navigate('Mobile')
   }
   toWeb(){
     alert('props web')
