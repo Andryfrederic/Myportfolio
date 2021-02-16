@@ -7,14 +7,43 @@ const hp = (Dimensions.get('screen').height)/100;
 
 const Style = StyleSheet.create({
     container:{
-flex:1
+alignSelf:'center',
+width:wp*90,
+height:hp*56,
     },
 detailscontainer:{
     width:wp*90,
-    height:hp*55,
-    backgroundColor:'blue',
+    height:hp*45,
+    // backgroundColor:'blue',
     marginTop:hp*2,
-    alignSelf:'center'
+    elevation: 15,
+    backgroundColor: "white",
+    borderRadius: 6,
+    borderTopWidth: 1,
+    borderColor: "rgba(0,0,0,0.1)"
+},
+title:{
+    fontSize:12,
+    fontWeight:'bold',
+    paddingTop:4,
+    paddingLeft:10,
+    paddingRight:10,
+    paddingBottom:4,
+},
+titleDesc:{
+    fontSize:12,
+    fontWeight:'900',
+    paddingLeft:10,
+    paddingRight:10,
+    paddingBottom:4,
+},
+details:{
+    marginLeft:wp*10,
+    fontSize:11,
+    fontWeight:'100',
+    opacity:0.5,
+    textAlign:'justify',
+    width:wp*60
 }
  
   });

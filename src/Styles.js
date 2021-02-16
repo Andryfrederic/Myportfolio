@@ -40,8 +40,11 @@ arrow:{
     ],
    },
  image:{
-    width:120,
-    height:110
+    width:wp*10,
+    height:hp*5,
+    backgroundColor:'white',
+    position:'absolute',
+    right:wp*2
  },
  row:{
      flexDirection:'row',
@@ -66,6 +69,16 @@ contactbutton:{
     position:'absolute',
     right:-wp*5,
     top:hp*4
+},
+Textcontainer:{
+    marginTop:hp*2
+},
+subDetails:{
+    marginLeft:wp*10
+},
+light_background:{
+    // backgroundColor:'#FAEFF3',
+    backgroundColor:'#FAEDB5'
 }
   });
   export default Styles;

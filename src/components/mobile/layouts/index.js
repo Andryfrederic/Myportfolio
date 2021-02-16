@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
 View,
 Text,
+Dimensions
 } from "react-native";
 import Avatar from '../../avatar/layouts/Avatar'
 import Menu from '../../menu/layouts/Menu'
@@ -37,6 +38,8 @@ class Mobile extends Component {
           this.props.navigation.navigate('Accueil')
       }
     render() {
+        const hp = (Dimensions.get('screen').height)/100;
+        const wp = (Dimensions.get('window').width)/100;
       return (
       <View style={{
           flex:1
