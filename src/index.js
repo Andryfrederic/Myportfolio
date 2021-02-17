@@ -9,7 +9,6 @@ import Styles from './Styles'
 import Presentation from './components/presentation/layouts/Presentation'
 import Footer from './components/footer/layouts/Footer'
 import Avatar from './components/avatar/layouts/Avatar'
-import Parcours from './components/parcours/layouts/parcours'
 import Menu from './components/menu/layouts/Menu'
 class Accueil extends Component {
   static navigationOptions =
@@ -31,10 +30,10 @@ class Accueil extends Component {
     this.props.navigation.navigate('Mobile')
   }
   toWeb(){
-    alert('props web')
+    this.props.navigation.navigate('Web')
   }
   toParcours(){
-    alert('props parcours')
+    this.props.navigation.navigate('Parcours')
   }
 
   render() {
@@ -47,11 +46,9 @@ class Accueil extends Component {
                     toWeb={()=>this.toWeb()}
                     toParcours={()=>this.toParcours()}
              />
-             <View style={Styles.container}>
-                    <Presentation/>
-             </View>
+             <Presentation/>
              <View style={Styles.rowcontainer}>
-                    <View style={Styles.arrow}/>
+                    {/* <View style={Styles.arrow}/> */}
                     <TouchableOpacity
                       style={Styles.contactbutton}
                       onPress={()=>alert("ok")}>

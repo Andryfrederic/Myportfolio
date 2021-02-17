@@ -7,8 +7,9 @@ Dimensions
 import Avatar from '../../avatar/layouts/Avatar'
 import Menu from '../../menu/layouts/Menu'
 import Footer from '../../footer/layouts/Footer'
-import Details from './details'
-class Mobile extends Component {
+import Webdetails from './webdetails'
+import Details from '../../mobile/layouts/details'
+class Web extends Component {
     static navigationOptions =
     {
      headerShown: false
@@ -26,14 +27,14 @@ class Mobile extends Component {
     }
    
     toMobile(){
-      this.props.navigation.navigate('Mobile')
-    }
-    toWeb(){
-      this.props.navigation.navigate('Web')
-    }
-    toParcours(){
-      this.props.navigation.navigate('Parcours')
-    }
+        this.props.navigation.navigate('Mobile')
+      }
+      toWeb(){
+        this.props.navigation.navigate('Web')
+      }
+      toParcours(){
+        this.props.navigation.navigate('Parcours')
+      }
       home(){
           this.props.navigation.navigate('Accueil')
       }
@@ -50,7 +51,7 @@ class Mobile extends Component {
             toMobile={()=>this.toMobile()}
             toWeb={()=>this.toWeb()}
             toParcours={()=>this.toParcours()}/>
-           <Details/>
+           <Webdetails/>
           <Footer
           home={()=>this.home()}/>
       </View> 
@@ -58,4 +59,4 @@ class Mobile extends Component {
     }
   }
   
-  export default Mobile;
+  export default Web;

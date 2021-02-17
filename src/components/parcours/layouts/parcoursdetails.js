@@ -8,7 +8,7 @@ import {
     } from "react-native";
 import Styles from '../../../Styles';
 import Style from '../statics/Styles'
-const Details =()=>{
+const Parcoursdetails =()=>{
     const hp = (Dimensions.get('screen').height)/100;
     const wp = (Dimensions.get('window').width)/100;
 return(
@@ -17,8 +17,8 @@ return(
                     <Image style={Styles.image}
                     source={require('../../../images/bouton.jpg')}>
                     </Image>
-                    <Text style={Styles.title}>
-                    Mon projet personnel
+                    <Text style={Styles.title}> 
+                    Formation et diplôme
                     </Text>
                     <View style={Styles.Textcontainer}>
                         <View>
@@ -34,7 +34,7 @@ return(
                                 </Text>
                             </View>
                         </View>
-                        <View style={Styles.Textcontainer}>
+                        <View style={Styles.light_background}>
                             <Text style={Style.title}>
                                     Hi anatra
                             </Text>
@@ -44,6 +44,9 @@ return(
                                 </Text>
                                 <Text style={Style.details}>
                                         C'est une application pédagogique pour apprendre la prononciation, les cibles sont les enfants moins de cinq(05) ans.
+                                </Text>
+                                <Text style={Style.titleDesc}>
+                                        Demo en vidéo:
                                 </Text>
                             </View>
                         </View>
@@ -66,9 +69,12 @@ return(
                                 <Text style={Style.details}>
                                         C'est un outil de captation video/photo/audio/texte pour les stagiaire de Forma2+.
                                 </Text>
+                                <Text style={Style.titleDesc}>
+                                        Demo en vidéo:
+                                </Text>
                             </View>
                         </View>
-                        <View style={Styles.Textcontainer}>
+                        <View style={Styles.light_background}>
                             <Text style={Style.title}>
                                     PizzaR
                             </Text>
@@ -79,6 +85,9 @@ return(
                                 <Text style={Style.details}>
                                         C'est une application de vente et commande en ligne des Pizza.
                                 </Text>
+                                <Text style={Style.titleDesc}>
+                                        Demo en vidéo:
+                                </Text>
                             </View>
                         </View>
                     </View>
@@ -86,4 +95,4 @@ return(
     </View>
 )
 }
-export default Details;
+export default Parcoursdetails;

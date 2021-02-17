@@ -17,7 +17,7 @@ class Footer extends React.Component {
     onPress={this.props.home}>
           <View>
                    <Text style={[Styles.title,{color:'white'}]}>
-                                  Portfolio de: Andrinantenaina Fréderic
+                                  Portfolio de: Andrinantenaina Fréderic       Version 1.0
                    </Text>
           </View>
     </TouchableOpacity>

@@ -68,7 +68,7 @@ contactbutton:{
     width:wp*40,
     position:'absolute',
     right:-wp*5,
-    top:hp*4
+    top:hp*2
 },
 Textcontainer:{
     marginTop:hp*2
