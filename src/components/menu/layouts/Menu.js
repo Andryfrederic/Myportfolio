@@ -8,8 +8,15 @@ TouchableOpacity
 import Style from '../statics/Styles'
 import Styles from '../../../Styles'
 class Menu extends React.Component {
-  state = {
-  }
+    constructor(props) {
+        super(props);
+    
+        this.state = {
+                       }
+        // this.changeM=this.changeM.bind(this);
+        // this.changeW=this.changeW.bind(this);
+        // this.changeP=this.changeP.bind(this)               
+      }
 
   componentDidMount() {
   }

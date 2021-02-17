@@ -47,7 +47,7 @@ class Parcours extends Component {
 
           <Avatar/>
           <Menu
-            toMobile={()=>this.toMobile()}
+            toMobile={this.toMobile}
             toWeb={()=>this.toWeb()}
             toParcours={()=>this.toParcours()}/>
            <Parcoursdetails/>

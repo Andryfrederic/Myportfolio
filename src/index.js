@@ -20,23 +20,33 @@ class Accueil extends Component {
        super(props);
    
        this.state = {
-       
+       Mclicked:'false',
+       Wclicked:false,
+       Pclicked:false
                       }
      }
 
   componentDidMount() {
   }
   toMobile(){
-    this.props.navigation.navigate('Mobile')
+    this.setState({Mclicked:'true',
+      //  Wclicked:false,
+      //  Pclicked:false
+});
+    this.props.navigation.navigate('Mobile');
+  
   }
   toWeb(){
-    this.props.navigation.navigate('Web')
+    this.props.navigation.navigate('Web');
+    this.setState({clicked:true})
   }
   toParcours(){
-    this.props.navigation.navigate('Parcours')
+    this.props.navigation.navigate('Parcours');
+    this.setState({clicked:true})
   }
 
   render() {
+    const {Mclicked}=this.state;
     return (
     <View
     style={Styles.idexcontainer}>
@@ -45,6 +55,7 @@ class Accueil extends Component {
                     toMobile={()=>this.toMobile()}
                     toWeb={()=>this.toWeb()}
                     toParcours={()=>this.toParcours()}
+                    Mclicked={this.state.Mclicked}
              />
              <Presentation/>
              <View style={Styles.rowcontainer}>

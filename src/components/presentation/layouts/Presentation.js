@@ -18,12 +18,12 @@ return(
                     source={require('../../../images/bouton.jpg')}>
                     </Image>
                     <Text style={Styles.title}>
-                    Bonjour, Voici mes compétances:
+                    Bonjour!
                     </Text>
                     <View style={Styles.Textcontainer}>
                     <View>
                             <Text style={Style.title}>
-                                    Mes langages de developpement:
+                                    Langages de developpement:
                             </Text>
                             <View style={Styles.subDetails}>
                                 <Text style={Style.titleDesc}>
@@ -98,36 +98,10 @@ return(
                             </View>
                             <View style={Styles.subDetails}>
                                 <Text style={Style.titleDesc}>
-                                        - Django:
-                                </Text>
-                                <Text style={Style.details}>
-                                         Deux (02) mois d'éxpérience
+                                        - Notion en: Django, Struts, Hibernate, Spring
                                 </Text>
                             </View>
-                            <View style={Styles.subDetails}>
-                                <Text style={Style.titleDesc}>
-                                        - Struts:
-                                </Text>
-                                <Text style={Style.details}>
-                                         Quatre (04) mois d'éxpérience
-                                </Text>
-                            </View>
-                            <View style={Styles.subDetails}>
-                                <Text style={Style.titleDesc}>
-                                        - Hibernate:
-                                </Text>
-                                <Text style={Style.details}>
-                                         Quatre (04) mois d'éxpérience
-                                </Text>
-                            </View>
-                            <View style={Styles.subDetails}>
-                                <Text style={Style.titleDesc}>
-                                        - Spring:
-                                </Text>
-                                <Text style={Style.details}>
-                                         Quatre (04) mois d'éxpérience
-                                </Text>
-                            </View>
+                            
                         </View>
                         <View style={Styles.Textcontainer}>
                             <Text style={Style.title}>
@@ -144,10 +118,33 @@ return(
                         </View>
                     </View>
                     {/* Autre projet */}
+
+                    <View style={Styles.Textcontainer}>
+                            <Text style={Style.title}>
+                                    SGBD:
+                            </Text>
+                            <View style={Styles.subDetails}>
+                                <Text style={Style.titleDesc}>
+                                        - MySQL, MS Access, SQL lite,:
+                                </Text>
+                                <Text style={Style.details}>
+                                         Quatre (04) ans d'éxpérience.
+                                </Text>
+                            </View>
+                            <View style={Styles.subDetails}>
+                                <Text style={Style.titleDesc}>
+                                        - Mongo DB, Oracle, PorstgresSQL, AsyncStorage:
+                                </Text>
+                                <Text style={Style.details}>
+                                         Un (01) ans d'éxpérience.
+                                </Text>
+                            </View>
+                     </View>
+
                     <View>
-                        <Text style={[Styles.title,{marginTop:hp*1,opacity:0.5,fontSize:8}]}>
+                        {/* <Text style={[Styles.title,{marginTop:hp*1,opacity:0.5,fontSize:8}]}>
                                 Merci de votre visite!
-                        </Text>
+                        </Text> */}
                     </View>
                     
             </ScrollView>
