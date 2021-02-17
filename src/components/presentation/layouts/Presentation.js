@@ -14,9 +14,6 @@ const Details =()=>{
 return(
     <View style={Style.container}>
             <ScrollView style={Style.detailscontainer}>
-                    <Image style={Styles.image}
-                    source={require('../../../images/bouton.jpg')}>
-                    </Image>
                     <Text style={Styles.title}>
                     Bonjour!
                     </Text>

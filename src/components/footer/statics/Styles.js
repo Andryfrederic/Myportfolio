@@ -10,7 +10,7 @@ const Style = StyleSheet.create({
         position:'absolute',
         bottom:hp*1,
         width:wp*70,
-        height:hp*8,
+        height:hp*7,
         backgroundColor:'#900C3F',
         alignItems:'center',
         justifyContent:'center',

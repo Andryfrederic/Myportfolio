@@ -38,6 +38,13 @@ class Avatar extends React.Component {
                                 </Text>
                                 </View>
                         </View>
+                        <TouchableOpacity
+                        style={Style.myP}
+                        onPress={this.props.home}>
+                                <Image style={Style.icon}
+                                        source={require('../statics/images/iconMyP.png')}>
+                                </Image>
+                        </TouchableOpacity>
                         
     </View> 
     );

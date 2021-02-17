@@ -46,7 +46,7 @@ class Web extends Component {
           flex:1
       }}>
 
-          <Avatar/>
+          <Avatar  home={()=>this.home()}/>
           <Menu
             toMobile={()=>this.toMobile()}
             toWeb={()=>this.toWeb()}

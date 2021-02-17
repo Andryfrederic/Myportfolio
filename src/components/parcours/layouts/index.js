@@ -34,9 +34,9 @@ class Parcours extends Component {
     toParcours(){
       this.props.navigation.navigate('Parcours')
     }
-      home(){
-          this.props.navigation.navigate('Accueil')
-      }
+    home(){
+        this.props.navigation.navigate('Accueil')
+    }
     render() {
         const hp = (Dimensions.get('screen').height)/100;
         const wp = (Dimensions.get('window').width)/100;
@@ -45,9 +45,9 @@ class Parcours extends Component {
           flex:1
       }}>
 
-          <Avatar/>
+          <Avatar  home={()=>this.home()}/>
           <Menu
-            toMobile={this.toMobile}
+            toMobile={()=>this.toMobile()}
             toWeb={()=>this.toWeb()}
             toParcours={()=>this.toParcours()}/>
            <Parcoursdetails/>

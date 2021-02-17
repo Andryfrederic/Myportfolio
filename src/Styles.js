@@ -79,6 +79,16 @@ subDetails:{
 light_background:{
     // backgroundColor:'#FAEFF3',
     backgroundColor:'#FAEDB5'
+},
+call:{
+    position:'absolute',
+    bottom:hp*9,
+    right:wp*5
+},
+imagecall:{
+    width:wp*16,
+    height:hp*8,
+    borderRadius:50
 }
   });
   export default Styles;
